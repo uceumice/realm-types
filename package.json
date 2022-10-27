@@ -21,7 +21,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/uceumice/realm-fun-types"
+    "url": "https://github.com/uceumice/realm-types"
   },
   "keywords": [
     "realm",
@@ -35,9 +35,9 @@
     "types"
   ],
   "bugs": {
-    "url": "https://github.com/uceumice/realm-fun-types/issues"
+    "url": "https://github.com/uceumice/realm-types/issues"
   },
-  "homepage": "https://github.com/uceumice/realm-fun-types#readme",
+  "homepage": "https://github.com/uceumice/realm-types#readme",
   "devDependencies": {
     "prettier": "^2.7.1",
     "tslint-config-prettier": "^1.18.0",
