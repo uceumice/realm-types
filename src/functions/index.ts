@@ -12,8 +12,8 @@ import type { EJSON } from '../shared/helpers';
  *
  * - [Docs Reference](https://www.mongodb.com/docs/atlas/app-services/functions)
  */
-export type RealmFunction<Args extends EJSON[] | EJSON, Rtrn extends EJSON | void | Promise<EJSON | void>> = (
-  ...args: Args extends unknown[] ? Args : [Args]
+export type RealmFunction<Args extends EJSON[], Rtrn extends EJSON | void | Promise<EJSON | void>> = (
+  ...args: Args
 ) => Rtrn;
 
 export { Context } from './context/shared';

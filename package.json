@@ -1,51 +1,52 @@
 {
-  "name": "@realm-fun/types",
-  "version": "0.1.3",
-  "description": "Realm Fun | Pain Killers | Types",
-  "author": "uceumice <hi@uceumice.com>",
-  "license": "ISC",
-  "main": "lib/index.js",
-  "types": "lib/index.d.ts",
+  "name": "@realm.w/types",
+  "main": "./out/index.js",
+  "types": "./out/index.d.ts",
   "files": [
-    "lib/**/*"
+    "out/**/*"
   ],
+  "version": "0.1.4",
   "scripts": {
     "build": "tsc",
-    "lint": "tslint -p tsconfig.json",
     "format": "prettier --write \"src/**/*.ts\"",
-    "prepublishOnly": "npm run lint",
     "prepare": "npm run build",
-    "preversion": "npm run lint",
+    "publish": "npm publish --access public",
     "version": "npm run format && git add -A src",
     "postversion": "git push && git push --tags"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/uceumice/realm-types"
-  },
-  "keywords": [
-    "realm",
-    "fun",
-    "realm-fun",
-    "mongodb",
-    "atlas",
-    "app",
-    "services",
-    "atlas app services",
-    "types"
-  ],
-  "bugs": {
-    "url": "https://github.com/uceumice/realm-types/issues"
-  },
-  "homepage": "https://github.com/uceumice/realm-types#readme",
   "devDependencies": {
     "prettier": "^2.7.1",
-    "tslint-config-prettier": "^1.18.0",
-    "eslint": "^8.26.0",
     "typescript": "^4.7.4"
   },
   "dependencies": {
     "bson": "^4.7.0",
     "mongodb": "^4.11.0"
-  }
+  },
+  "engines": {
+    "node": ">=14"
+  },
+  "author": {
+    "name": "uceumice",
+    "url": "https://uceumice.com",
+    "email": "hi@uceumice.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uceumice/realm.w-cli"
+  },
+  "keywords": [
+    "realm",
+    "mongodb",
+    "atlas",
+    "app",
+    "services",
+    "atlas app services",
+    "atlas.app.services",
+    "types",
+    "helpers",
+    "mongodb",
+    "functions",
+    "serverless"
+  ],
+  "license": "MIT"
 }
