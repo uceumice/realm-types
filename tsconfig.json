@@ -3,11 +3,11 @@
         "target": "ES2015",
         "module": "CommonJS",
         "declaration": true,
-        "outDir": "./out",
+        "outDir": "out",
         "strict": true
     },
     "include": [
-        "./src/**/*"
+        "src/**/*.ts"
     ],
     "exclude": [
         "node_modules"

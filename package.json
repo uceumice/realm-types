@@ -1,11 +1,11 @@
 {
   "name": "@realm.w/types",
-  "main": "./out/index.js",
-  "types": "./out/index.d.ts",
+  "main": "out/index.js",
+  "types": "out/index.d.ts",
   "files": [
-    "out/**/*"
+    "out"
   ],
-  "version": "0.1.4",
+  "version": "0.1.5",
   "scripts": {
     "build": "tsc",
     "format": "prettier --write \"src/**/*.ts\"",
@@ -15,8 +15,8 @@
     "postversion": "git push && git push --tags"
   },
   "devDependencies": {
-    "prettier": "^2.7.1",
-    "typescript": "^4.7.4"
+    "prettier": "latest",
+    "typescript": "latest"
   },
   "dependencies": {
     "bson": "^4.7.0",
@@ -32,7 +32,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/uceumice/realm.w-cli"
+    "url": "https://github.com/uceumice/realm.w-types"
   },
   "keywords": [
     "realm",
